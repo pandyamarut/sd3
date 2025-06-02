@@ -39,7 +39,17 @@
             },
             "required": true,
             "description": "Choose 'run' for async or 'runsync' for synchronous image generation"
-          }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Bearer access token. Format: 'Bearer {token}'",
+            "required": true,
+            "schema": {
+            "type": "string",
+            "example": "Bearer YOUR_API_TOKEN"
+          },
+  }
         ],
         "requestBody": {
           "required": true,
